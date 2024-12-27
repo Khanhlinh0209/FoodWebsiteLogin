@@ -28,7 +28,7 @@ body {
 }
 
 .image-section {
-  flex: 7;
+  flex: 6;
   background-color: #f8f9fa;
   display: flex;
   align-items: center;
@@ -43,8 +43,9 @@ body {
 }
 
 .login-container {
-  flex: 3;
-  padding: 40px;
+  flex: 4;
+  padding: 0 4rem;
+  height: 80%;
 }
 
 .login-container h2 {
@@ -54,15 +55,18 @@ body {
 }
 
 .login-container p {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .form-control {
+  height: 2rem;
   padding: 0.5rem;
-  border-radius: 5px;
   border: none;
   border-bottom: 1px solid black;
 }
 
+.form-label {
+  color: #aaaaaa;
+}
 .form-control:focus {
   border-color: #28a745;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
@@ -70,6 +74,7 @@ body {
 
 .linkForgotPass {
   flex: 1;
+  color: #545454;
 }
 
 .linkForgotPass a {
@@ -81,4 +86,48 @@ body {
   flex: 1;
   border-radius: 2rem;
   background-color: #40cc6f;
+}
+
+.btn:hover {
+  border: 2px solid #40cc6f;
+}
+
+.btn-login {
+  margin-right: 1rem;
+  width: 10rem;
+  color: #ffffff;
+}
+
+.btn-register {
+  width: 10rem;
+  background: none;
+}
+
+.btn-loginFacebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: 15rem;
+}
+
+.btn-other {
+  align-items: center;
+  justify-content: center;
+}
+.btn-loginFacebook img {
+  padding-right: 1rem;
+}
+
+.content-others {
+  color: #8e8e8e;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 560px) {
+  .login-container {
+    width: 100%;
+    max-width: 100%;
+  }
 }

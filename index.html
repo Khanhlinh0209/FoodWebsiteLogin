@@ -10,38 +10,42 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="main-container">
       <div class="login-wrapper">
-        <!-- Phần ảnh -->
+        <!-- Phần ảnh - bên trái -->
         <div class="image-section">
-          <img src="./imgLogin.png" alt="Login image" />
+          <img src="./imgLogin.png" alt="" />
         </div>
-        <!-- Phần form -->
+        <!-- Phần form - bên phải-->
         <div class="login-container">
+          <div class="btn-controller mb-5">
+            <button class="btn btn-login">Login</button>
+            <button class="btn btn-register">Register</button>
+          </div>
+
           <h2 class="mb-1">Welcome</h2>
           <p>Please login to your account</p>
           <form>
             <div class="form-group mb-3">
-              <label for="userID" class="form-label">Username:</label>
+              <label for="userID" class="form-label">Username or Email</label>
               <input
                 type="text"
                 class="form-control"
                 id="userID"
                 name="userID"
-                required
               />
             </div>
             <div class="form-group mb-4">
-              <label for="password" class="form-label">Password:</label>
+              <label for="password" class="form-label">Password</label>
               <input
                 type="password"
                 class="form-control"
                 id="password"
                 name="password"
-                required
               />
             </div>
             <div class="d-flex">
@@ -52,6 +56,16 @@
               <button type="submit" class="btn" name="action">Login</button>
             </div>
           </form>
+
+          <div class="mt-5 btn-other d-flex">
+            <button class="btn btn-loginFacebook">
+              <img src="./facebook.png" alt="" />Login with facebook
+            </button>
+          </div>
+
+          <div class="content-others d-flex mt-3">
+            <p>Terms and Conditions & Privacy Policy</p>
+          </div>
         </div>
       </div>
     </div>
